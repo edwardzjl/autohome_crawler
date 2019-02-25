@@ -1,21 +1,21 @@
-#!/usr/bin/env python
+#!/usr/local/bin/env python3
 # encoding: utf-8
 
 #  伪装配置
 headers = {
-    "Accept-Encoding":"gzip",
+    "Accept-Encoding": "gzip, deflate",
     "Cache-Control": "max-age=0",
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36',
-    "Accept-Language":  "zh-CN,zh;q=0.8,en;q=0.6,en-US;q=0.4,zh-TW;q=0.2",
-    "Connection" :  "keep-alive",
-    "Accept-Encoding" :  "gzip, deflate",
-    "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+    "Accept-Language": "zh-CN, zh;q=0.8, en;q=0.6, en-US;q=0.4, zh-TW;q=0.2",
+    "Connection": "keep-alive",
+    # "Accept-Encoding" :  "gzip, deflate",
+    "Accept": "text/html, application/xhtml+xml, application/xml;q=0.9, image/webp, */*;q=0.8"
 }
 
 # 输出文件路径
 file_output = './results/cars.txt'
 
-# 主域名,用于拼接完整URL
+# 主域名, 用于拼接完整 URL
 domain = "http://car.autohome.com.cn"
 
 # 最开始的品牌入口
